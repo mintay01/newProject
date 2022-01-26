@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,10 +9,18 @@
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
     <nav class="sidebar close">
         <header>
-           
+            <div class="menu-bar menu image-text nav-link">
+                <div class="text logo-text">
+                    <span class="image">
+                        <img src="./image/FB_IMG_1641464909959.jpg" alt="">
+                    </span>
+
+                </div>
+            </div>
 
             <i class="fas fa-align-justify toggle"></i>
         </header>
@@ -26,10 +35,10 @@
 
                 <ul class="menu-links">
                     <div class="menu-bar menu image-text nav-link">
-                        <span class="image">
+                        <!-- <span class="image">
                             <img src="./image/FB_IMG_1641464909959.jpg" alt="">
-                        </span>
-        
+                        </span> -->
+
                         <!-- <div class="text logo-text">
                             <span class="name">Codinglab</span>
                             <span class="profession">Web developer</span>
@@ -40,6 +49,7 @@
                             <i class="fas fa-home icon"></i>
                             <span class="text nav-text">Home</span>
                         </a>
+                        <span class="tooltip">Home</span>
                     </li>
 
                     <li class="nav-link">
@@ -47,6 +57,7 @@
                             <i class="far fa-user-circle  icon"></i>
                             <span class="text nav-text">User List</span>
                         </a>
+                        <span class="tooltip">User List</span>
                     </li>
 
                     <li class="nav-link">
@@ -54,13 +65,15 @@
                             <i class="far fa-user-circle  icon"></i>
                             <span class="text nav-text">Family List</span>
                         </a>
+                        <span class="tooltip">Family List</span>
                     </li>
 
                     <li class="nav-link">
                         <a href="#">
-                            <i class="far fa-user-circle  icon"></i>                           
-                             <span class="text nav-text">Family Tree</span>
+                            <i class="far fa-user-circle  icon"></i>
+                            <span class="text nav-text">Family Tree</span>
                         </a>
+                        <span class="tooltip">Family Tree</span>
                     </li>
 
                     <!-- <li class="nav-link">
@@ -81,11 +94,12 @@
             </div>
 
             <div class="bottom-content">
-                <li class="">
+                <li class="nav-link">
                     <a href="#">
                         <i class="fas fa-power-off icon"></i>
                         <span class="text nav-text">Logout</span>
                     </a>
+                    <span class="tooltip">Log out</span>
                 </li>
 
                 <!-- <li class="mode">
@@ -99,18 +113,59 @@
                         <span class="switch"></span>
                     </div>
                 </li> -->
-                
+
             </div>
         </div>
 
     </nav>
 
     <section class="home">
-        <div class="text">Abc Acharaya</div>
+        <div class="text">
+            <span>
+                Acharaya
+            </span>
+            <div class="logo-container" onclick="openForm()">
+                <img class="img" src="./image/pexels-rizky-sabriansyah-10661212.jpg" alt="">
+            </div>
+        </div>
+        <div class="form-popup" id="myForm">
+            <form class="form-container">
+                <div style="display: flex; justify-content: flex-end; padding: 2px;">
+                    <button type="button" class="btn cancel" onclick="closeForm()"><i
+                            class="far fa-times-circle"></i></button>
+
+
+                </div>
+
+                <div class="side-body-logout-section">
+
+                    <span>
+                        <i class="fas fa-user-circle"></i>
+                        <h1>Minal Pandit</h1>
+                    </span>
+                    <span>
+                        <i class="fas fa-envelope"></i>
+                        <p>meenalme1@gmail.com</p>
+                    </span>
+                    <span>
+
+                        <button> <i class="fas fa-pen"></i>Change Password</button>
+                    </span>
+                    <span>
+
+                        <button> <i class="fas fa-power-off"></i>Log out</button>
+                    </span>
+
+
+
+                </div>
+            </form>
+        </div>
+
     </section>
 
-  
-      <div class="side-body">
+
+    <div class="side-body">
         <!-- <footer> 
             <div class="footer-company-profile">
                 <span class="company-name">Silicon Soft and IT Consulant Pvt.Ltd</span>
@@ -163,11 +218,12 @@
     
             </div>
         </footer>  -->
-      </div>
-      <script src="./index.js">
-       
+    </div>
+    <script src="./index.js">
+
 
 
     </script>
 </body>
+
 </html>
