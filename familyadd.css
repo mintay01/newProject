@@ -1,0 +1,156 @@
+.text-addFamily {
+  padding: 12px 60px;
+}
+legend {
+  font-size: 18px;
+  font-weight: 800;
+}
+fieldset {
+  background: rgba(0, 0, 0, 0.26);
+  padding: 10px;
+
+  margin: auto;
+}
+label {
+  font-size: 16px;
+}
+.section {
+  margin: 15px;
+  text-align: left;
+  width: 96.5%;
+}
+.section span {
+  font-size: 18px;
+  text-decoration: underline;
+}
+#district {
+  width: 100px;
+}
+#woda {
+  width: 36px !important;
+}
+#tole {
+  width: 111px;
+}
+#state {
+  width: 80px;
+}
+#muni {
+  width: 150px;
+}
+#state,
+#district,
+#muni,
+#woda,
+#tole {
+  margin-right: 10px;
+}
+#woda,
+#tole {
+  height: 36px;
+  font-size: 18px;
+  padding: 5px;
+  border-radius: 2px;
+  border: none;
+}
+.section div input,
+select {
+  width: 100%;
+  border-radius: 2px;
+  height: 36px;
+  border: none;
+  font-size: 18px;
+  padding: 5px;
+}
+section div input:hover {
+  box-shadow: 0 12px 16px 0 rgb(0 0 0 / 24%), 0 17px 50px 0 rgb(0 0 0 / 19%);
+}
+
+.section input,
+.section select:focus-visible {
+  outline: none;
+}
+
+#gender:hover,
+#birthday:hover,
+#marriedstatus:hover,
+#state:hover,
+#district:hover,
+#muni:hover {
+  cursor: pointer;
+}
+.submit-btn {
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 1;
+  border-radius: 500px;
+  transition-property: background-color, border-color, color, box-shadow, filter;
+  transition-duration: 0.3s;
+  border: 1px solid transparent;
+  letter-spacing: 2px;
+  min-width: 146px;
+  text-transform: uppercase;
+  white-space: normal;
+  font-weight: 700;
+  text-align: center;
+  padding: 11px 5px 11px;
+  color: #616467;
+  box-shadow: inset 0 0 0 2px #616467;
+  background-color: transparent;
+  height: 48px;
+  transition: var(--tran-03);
+}
+.submit-btn:focus {
+  outline: none;
+}
+.btn-content {
+  text-align: right;
+}
+.btn-content:active {
+  transform: scale(0.98, 0.95);
+}
+.submit-btn:hover {
+  box-shadow: 0 12px 16px 0 rgb(0 0 0 / 24%), 0 17px 50px 0 rgb(0 0 0 / 19%);
+  border: 1px solid gray;
+  background: #ffffffab;
+  color: #5dae8d;
+
+  cursor: pointer;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: rgb(229 229 229 / 36%);
+}
+.user-image-icon {
+  position: relative;
+  width: fit-content;
+}
+.user-image {
+  max-width: 100%;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid grey;
+}
+.fa-edit {
+  opacity: 0.8;
+  position: absolute;
+  bottom: 5%;
+  left: 74%;
+  transform: translateY(-50%);
+}
+
+  

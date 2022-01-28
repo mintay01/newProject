@@ -1,0 +1,162 @@
+
+  
+  .side-body-logout-section span:last-child {
+    border-top: 2px solid gray;
+  }
+  .side-body-logout-section span:hover {
+    box-shadow: 0 4px 20px 0 rgb(0 0 0 / 14%), 0 7px 10px -5px rgb(0 0 0 / 58%);
+    background-color: #ccfff3;
+    cursor: pointer;
+  }
+  .side-body-logout-section button {
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+  }
+  .side-body-logout-section span button i {
+    font-size: 20px;
+  }
+  .side-body-logout-section span i {
+    font-size: 20px;
+  }
+  .form-container {
+    width: 100%;
+    padding: 3px 0 5px;
+    background-color: #ddddddf2;
+    border-radius: 10px;
+  }
+  
+  .side-body-logout-section {
+    margin: 5px;
+    color: #000;
+  }
+  .side-body-logout-section span {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+  }
+  
+  .side-body-logout-section span {
+    padding: 8px;
+    font-size: 12px;
+    /* margin-bottom: 15px; */
+    /* height: 30px; */
+  }
+  .user-list span {
+    font-size: 25px;
+    font-weight: 700;
+    padding: 12px 16px;
+  }
+  #customers tr:hover {
+    background-color: #ddd;
+    box-shadow: 0 4px 20px 0 rgb(0 0 0 / 14%), 0 7px 10px -5px rgb(0 0 0 / 58%);
+  }
+  
+  #customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+  .fa-user-edit {
+    color: green;
+  }
+  .fa-times-circle {
+    color: red;
+  }
+  i {
+    cursor: pointer;
+  }
+  #customers {
+    padding: 0px 26px;
+    width: 100%;
+    margin: auto;
+    border-collapse: separate;
+    border-spacing: 0 3px;
+  }
+  
+  #customers td,
+  #customers th {
+    padding: 10px;
+    text-align: center;
+  }
+  #customers td {
+    font-size: 16px;
+  }
+  #customers tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  #customers tr:nth-child(odd) {
+    background-color: #c4c4c4;
+  }
+  .nextPage {
+    text-align: center;
+    padding: 5px;
+  }
+  .nextPage a {
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    border: 2px solid black;
+    padding: 0px 5px 0;
+    border-radius: 50%;
+  }
+  .nextPage i {
+    font-size: 17px;
+    opacity: 0.5;
+  }
+  .nextPage i:hover {
+    opacity: 1;
+  }
+  
+  .text-icon {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+  
+    padding: 7px 26px;
+  }
+  
+  .user-employee-header h2 {
+      font-family: Podkova;
+      text-align-last: center;
+      font-size: 25px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 44px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+
+    #myBtn {
+        display: inline-block;
+        outline: none;
+        cursor: pointer;
+        font-size: 14px;
+        line-height: 1;
+        border-radius: 500px;
+        transition-property: background-color, border-color, color, box-shadow, filter;
+        transition-duration: 0.3s;
+        border: 1px solid transparent;
+        letter-spacing: 2px;
+        min-width: 146px;
+        text-transform: uppercase;
+        white-space: normal;
+        font-weight: 700;
+        text-align: center;
+        padding: 11px 5px 11px;
+        color: #616467;
+        box-shadow: inset 0 0 0 2px #616467;
+        background-color: transparent;
+        height: 48px;
+      }
+      #myBtn:hover {
+        color: #fff;
+        background-color: #616467;
+        box-shadow: 0 12px 16px 0 rgb(0 0 0 / 24%), 0 17px 50px 0 rgb(0 0 0 / 19%);
+      }
+      #myBtn:active {
+        position: relative;
+        top: 1px;
+      }

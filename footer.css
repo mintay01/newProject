@@ -1,0 +1,31 @@
+footer {
+    display: flex;
+    width: 100%;
+    padding-top: 10px;
+    padding-left: 15px;
+    border-top: 2px solid black;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 12px;
+  }
+  .footer-img {
+    margin-left: 150px;
+  }
+  .company-profile {
+    display: flex;
+    margin-top: 8px;
+  }
+  .company-name {
+    /* margin-bottom: 10px;
+     */
+    font-size: 18px;
+  }
+  .footer-company-logo {
+    flex-grow: 0.5;
+  }
+  .footer-company-logo div span {
+    margin-left: 25px;
+  }
+  .fa-envelope {
+    margin-right: 15px;
+  }

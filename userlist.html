@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./fontawesome-free-5.15.4-web/css/all.min.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="./userlist.css">
+
+    <link rel="stylesheet" href="./layout.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="footer.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="menu-bar menu image-text nav-link">
+                <div class="text logo-text">
+                    <span class="image">
+                        <img src="./image/FB_IMG_1641464909959.jpg" alt="">
+                    </span>
+
+                </div>
+            </div>
+
+            <i class="fas fa-align-justify toggle"></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+
+
+                <ul class="menu-links">
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class="fas fa-home icon"></i>
+                            <span class="text nav-text">Home</span>
+                        </a>
+                        <!-- <span class="tooltip">Home</span> -->
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class="far fa-user-circle  icon"></i>
+                            <span class="text nav-text">User List</span>
+                        </a>
+                        <!-- <span class="tooltip">User List</span> -->
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class="far fa-user-circle  icon"></i>
+                            <span class="text nav-text">Family List</span>
+                        </a>
+                        <!-- <span class="tooltip">Family List</span> -->
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class="far fa-user-circle  icon"></i>
+                            <span class="text nav-text">Family Tree</span>
+                        </a>
+                        <!-- <span class="tooltip">Family Tree</span> -->
+                    </li>
+
+                    <!-- <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-heart icon' ></i>
+                            <span class="text nav-text">Likes</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-wallet icon' ></i>
+                            <span class="text nav-text">Wallets</span>
+                        </a>
+                    </li> -->
+
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                <li class="nav-link">
+                    <a href="#">
+                        <i class="fas fa-power-off icon"></i>
+                        <span class="text nav-text">Logout</span>
+
+                    </a>
+                    <!-- <span class="tooltip">Log out</span> -->
+                </li>
+
+                <!-- <li class="mode">
+                    <div class="sun-moon">
+                        <i class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i>
+                    </div>
+                    <span class="mode-text text">Dark mode</span>
+
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li> -->
+
+            </div>
+        </div>
+
+    </nav>
+
+    <section class="home">
+        <div class="text">
+            <span>
+                Acharaya
+            </span>
+            <div class="logo-container">
+                <img class="img" onclick="openForm()" src="./image/pexels-rizky-sabriansyah-10661212.jpg" alt="">
+            </div>
+        </div>
+        <div class="form-popup" id="myForm">
+            <form class="form-container">
+                <div style="display: flex; justify-content: flex-end; padding: 2px;">
+                    <button type="button" class="btn cancel" onclick="closeForm()"><i
+                            class="far fa-times-circle"></i></button>
+
+
+                </div>
+
+                <div class="side-body-logout-section">
+
+                    <span>
+                        <i class="fas fa-user-circle"></i>
+                        <h1>Minal Pandit</h1>
+                    </span>
+                    <span>
+                        <i class="fas fa-envelope"></i>
+                        <p>meenalme1@gmail.com</p>
+                    </span>
+                    <span>
+
+                        <button> <i class="fas fa-pen"></i>Change Password</button>
+                    </span>
+                    <span>
+
+                        <button> <i class="fas fa-power-off"></i>Log out</button>
+                    </span>
+
+
+
+                </div>
+            </form>
+        </div>
+
+        <article>
+            <div class="user-employee-header">
+                <h2>
+                    User-List
+                </h2>
+            </div>
+            <div class="text-icon">
+                <div class="text-employe">
+                    <a href="./familyadd.html">
+                        <button id="myBtn">Add User <i class="fas fa-user-plus"></i></button>
+                    </a>
+                    <!-- <button id="myBtn">Add User <i class="fas fa-user-plus"></i>
+                    <a href="./familyadd.html"></a></button> -->
+                </div>
+                <!-- <div id="myModal" class="modal">
+
+                   
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <span class="close">&times;</span>
+                            <h2>Edit Your Information</h2>
+                         
+                        </div>
+                        <div class="modal-body">
+                            <form action="">
+
+
+                                <div>
+                                    <div class="section image">
+                                        <label for="image">Upload Image:</label>
+                                        <input type="file" name="image" id="image" accept="image/*" />
+                                    </div>
+                                    <div style="display: flex;">
+                                        <div class="section">
+                                            <div>
+                                                <label for="fname">Full Name:</label>
+                                            </div>
+                                            <div>
+                                                <input type="text" id="fname" name="fname">
+                                            </div>
+
+                                        </div>
+                                        <div class="section">
+                                            <div>
+                                                <label for="pnumber">Phone No:</label>
+                                            </div>
+                                            <div>
+                                                <input type="tel" id="pnumber" name="pnumber">
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div style="display: flex;">
+                                        <div class="section">
+                                            <div>
+                                                <label for="mnumber">Mobile No:</label>
+                                            </div>
+                                            <div>
+                                                <input type="tel" id="mnumber" name="mnumber">
+                                            </div>
+
+                                        </div>
+                                        <div class="section">
+                                            <div>
+                                                <label for="email">Email:</label>
+                                            </div>
+                                            <div>
+                                                <input type="email" id="email" name="email">
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div style="display: flex;">
+
+                                        <div class="section">
+                                            <div>
+                                                <label for="birthday">Birthday:</label>
+                                            </div>
+                                            <div>
+                                                <input type="date" id="birthday" name="birthday">
+                                            </div>
+
+                                        </div>
+                                        <div class="section">
+                                            <div>
+                                                <label for="gender">Gender:</label>
+                                            </div>
+
+                                            <select name="gender" id="gender">
+                                                <option value="">Select</option>
+                                                <option value="male">Male</option>
+                                                <option value="female">Female</option>
+                                                <option value="other">Other</option>
+                                            </select>
+                                        </div>
+                                        <div class="section">
+                                            <div>
+                                                <label for="marriedstatus">Marital status:</label>
+                                            </div>
+
+                                            <select name="marriedstatus" id="marriedstatus">
+                                                <option value="">Select</option>
+                                                <option value="single">Single</option>
+                                                <option value="married">Married</option>
+                                                <option value="widow">Widowed</option>
+                                                <option value="divorce">Divorced</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="section address">
+                                        <div>
+                                            <label for="address">Address:</label>
+                                        </div>
+
+                                        <select name="state" id="state">
+                                            <option value="">State</option>
+                                            <option value="single">Single</option>
+                                            <option value="married">Married</option>
+                                            <option value="widow">Widowed</option>
+                                            <option value="divorce">Divorced</option>
+                                        </select>
+                                        <select name="district" id="district">
+                                            <option value="">District</option>
+                                            <option value="single">Single</option>
+                                            <option value="married">Married</option>
+                                            <option value="widow">Widowed</option>
+                                            <option value="divorce">Divorced</option>
+                                        </select>
+                                        <select name="muni" id="muni">
+                                            <option value="">Municipality</option>
+                                            <option value="single">Single</option>
+                                            <option value="married">Married</option>
+                                            <option value="widow">Widowed</option>
+                                            <option value="divorce">Divorced</option>
+                                        </select>
+                                        <label for="woda">Woda:</label>
+                                        <input type="number" name="woda" id="woda">
+                                        <label for="tole">Tole:</label>
+                                        <input type="number" name="tole" id="tole">
+                                    </div>
+                                    <div class="section">
+                                        <span>Teen Pustay Bibaran:</span>
+                                    </div>
+                                    <div style="display: flex;">
+                                        <div class="section">
+                                            <div>
+                                                <label for="fname">Grand Father Name:</label>
+                                            </div>
+                                            <div>
+                                                <input type="text" id="gfname" name="gfname">
+
+                                            </div>
+                                        </div>
+                                        <div class="section">
+                                            <div>
+                                                <label for="fname">Grand Mother Name:</label>
+                                            </div>
+                                            <div>
+                                                <input type="text" id="gmname" name="gmname">
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div style="display: flex;">
+                                        <div class="section">
+                                            <div>
+                                                <label for="fname">Father Name:</label>
+                                            </div>
+                                            <div>
+                                                <input type="text" id="faname" name="fname">
+                                            </div>
+
+                                        </div>
+                                        <div class="section">
+                                            <div>
+                                                <label for="fname">Mother Name:</label>
+                                            </div>
+                                            <div>
+                                                <input type="text" id="mname" name="mname">
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div style="display: flex;">
+                                        <div class="section">
+                                            <div>
+                                                <label for="fname">Wife/Husband Name:</label>
+                                            </div>
+                                            <div>
+                                                <input type="text" id="whmname" name="whmname">
+                                            </div>
+
+                                        </div>
+                                        <div></div>
+                                    </div>
+
+                                    <div class="section">
+                                        <table>
+                                            <tr>
+                                                <th>S.no</th>
+                                                <th>Name</th>
+                                                <th>Relation</th>
+                                                <th></th>
+                                            </tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Minal Acharya</td>
+                                                <td>Son</td>
+                                                <th><i class="fas fa-plus-circle"></i></th>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="btn-content">
+                                    <input class="submit-btn" type="submit" value="Submit">
+                                </div>
+
+
+
+
+                            </form>
+                        </div>
+                    </div>
+                </div> -->
+
+
+            </div>
+        </article>
+        <article>
+            <div class="table-wrapper">
+                <table id="customers">
+                    <thead>
+                        <tr>
+                            <th style="border-bottom: 2px solid black;" width: 10%;>S no.</th>
+                            <th style=" border-bottom: 2px solid black; ">Name</th>
+                            <th style=" border-bottom: 2px solid black; " class=" mail ">Grand Father Name</th>
+                            <th style=" border-bottom: 2px solid black; " class=" address ">
+                                Address
+                            </th>
+                            <th style=" border-bottom: 2px solid black; " class=" phone ">Phone</th>
+                            <th style=" border-bottom: 2px solid black; ">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1.</td>
+                            <td>Minal Pandit</td>
+                            <td class=" mail ">Meenalme1@gmail.com</td>
+                            <td class=" address ">Sitapaila</td>
+                            <td class=" phone ">9864374050</td>
+                            <td>
+                                <a href="./familyadd.html">
+                                    <i class=" fas fa-user-edit"></i>
+                                </a>
+
+                                <i class="far fa-times-circle"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1.</td>
+                            <td>Minal Pandit</td>
+                            <td class=" mail ">Meenalme1@gmail.com</td>
+                            <td class=" address "> Sitapaila</td>
+                            <td class=" phone ">9864374050</td>
+                            <td> <a href="./familyadd.html">
+                                    <i class=" fas fa-user-edit"></i>
+                                </a>
+                                <i class="far fa-times-circle"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1.</td>
+                            <td>Minal Pandit</td>
+                            <td class=" mail ">Meenalme1@gmail.com</td>
+                            <td class=" address ">Sitapaila</td>
+                            <td class=" phone ">9864374050</td>
+                            <td> <a href="./familyadd.html">
+                                    <i class=" fas fa-user-edit"></i>
+                                </a>
+                                <i class="far fa-times-circle"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1.</td>
+                            <td>Minal Pandit</td>
+                            <td class=" mail ">Meenalme1@gmail.com</td>
+                            <td class=" address ">Sitapaila</td>
+                            <td class=" phone ">9864374050</td>
+                            <td> <a href="./familyadd.html">
+                                    <i class=" fas fa-user-edit"></i>
+                                </a>
+                                <i class="far fa-times-circle"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1.</td>
+                            <td>Minal Pandit</td>
+                            <td class=" mail ">Meenalme1@gmail.com</td>
+                            <td class=" address ">Sitapaila</td>
+                            <td class=" phone ">9864374050</td>
+                            <td> <a href="./familyadd.html">
+                                    <i class=" fas fa-user-edit"></i>
+                                </a>
+                                <i class="far fa-times-circle"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1.</td>
+                            <td>Minal Pandit</td>
+                            <td class=" mail ">Meenalme1@gmail.com</td>
+                            <td class=" address ">Sitapaila</td>
+                            <td class=" phone ">9864374050</td>
+                            <td> <a href="./familyadd.html">
+                                    <i class=" fas fa-user-edit"></i>
+                                </a>
+                                <i class="far fa-times-circle"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1.</td>
+                            <td>Minal Pandit</td>
+                            <td class=" mail ">Meenalme1@gmail.com</td>
+                            <td class=" address ">Sitapaila</td>
+                            <td class=" phone ">9864374050</td>
+                            <td> <a href="./familyadd.html">
+                                    <i class=" fas fa-user-edit"></i>
+                                </a>
+                                <i class="far fa-times-circle"></i>
+                            </td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </div>
+            <div class="nextPage">
+                <a href=" ./user-list.html ">1</a>
+                <!-- <a href=" ./user-list.html ">2</a>
+                <a href=" ./user-list.html ">3</a> -->
+                <i class="far fa-arrow-alt-circle-right"></i>
+
+            </div>
+        </article>
+
+
+        <footer>
+            <div class="footer-company-profile">
+                <span class="company-name">Silicon Soft and IT Consulant Pvt.Ltd</span>
+                <div class="company-profile">
+                    <div>
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div>
+                        <span>
+                            Prayag Marge, Santinagar, Kathmandu, Nepal
+                        </span>
+                    </div>
+                </div>
+                <div class="company-profile">
+                    <div>
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div>
+                        <span>
+                            siliconsoftnepal@gmail.com / info@siliconsoftnepal.org.np
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="footer-company-logo">
+                <div class="footer-img">
+                    <img src="./image/flogo.png" alt="" width="50px">
+                </div>
+                <div>
+                    <span>
+                        Copyright ©2022 Silicon Soft and I.T. Consultant Pvt. Ltd.
+                    </span>
+                </div>
+            </div>
+            <div class="footer-company-person">
+                <span class="company-name">For More Details:</span>
+                <div class="company-profile">
+                    <span>
+                        <i class="fas fa-user"></i>
+                    </span>
+                    <span>Manjil Acharaya</span>
+                </div>
+                <div class="company-profile">
+                    <span>
+                        <i class="fas fa-id-card"></i>
+                    </span>
+                    <span>9843415029/9802760599</span>
+                </div>
+
+            </div>
+        </footer>
+    </section>
+
+
+
+
+
+    <script src="./index.js">
+
+
+
+    </script>
+    <script>
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var edit = document.querySelectorAll(".fa-user-edit");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        //
+        // When the user clicks the button, open the modal
+        var btn = document.getElementById("myBtn");
+        if (btn) {
+            btn.onclick = function () {
+                modal.style.display = "block";
+            };
+
+        }
+        edit.forEach((each) => {
+            each.addEventListener("click", () => {
+                modal.style.display = "block";
+            });
+        });
+
+        // When the user clicks on <span> (x), close the modal
+        if (span) {
+            span.onclick = function () {
+                modal.style.display = "none";
+            };
+
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        };
+    </script>
+</body>
+
+</html>
