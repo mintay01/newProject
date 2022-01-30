@@ -1,3 +1,53 @@
+.side-body-logout-section span:last-child {
+  border-top: 2px solid gray;
+}
+.side-body-logout-section span:hover {
+  box-shadow: 0 4px 20px 0 rgb(0 0 0 / 14%), 0 7px 10px -5px rgb(0 0 0 / 58%);
+  background-color: #ccfff3;
+  cursor: pointer;
+}
+.side-body-logout-section button {
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+}
+.side-body-logout-section span button i {
+  font-size: 20px;
+}
+.side-body-logout-section span i {
+  font-size: 20px;
+margin-right: 20px;
+}
+.form-container {
+  width: 100%;
+  padding: 3px 0 5px;
+  background-color: #ddddddf2;
+  border-radius: 10px;
+}
+
+.side-body-logout-section {
+  margin: 5px;
+  color: #000;
+}
+.side-body-logout-section span {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  padding: 8px;
+  font-size: 12px;
+}
+
+.btn{
+  opacity: 0.5;
+  color: red;
+  border: none;
+  background-color: transparent;
+}
+.btn:hover{
+  opacity: 1;
+}
 .sidebar {
     position: fixed;
     top: 0;
@@ -203,23 +253,7 @@
     display: block;
   }
   
-  .tooltip {
-    /* visibility: hidden; */
-    opacity: 0;
-    width: 120px;
-    color: black;
-    /* color: #fff; */
-    /* text-align: center; */
-    border-radius: 6px;
-    padding: 5px 0;
   
-    /* Position the tooltip */
-    position: absolute;
-    z-index: 1;
-    right: -108px;
-    /* transform: translateY(-50%); */
-    transition: 0.5s;
-  }
   .nav-link:hover .tooltip {
     /* visibility: visible; */
     opacity: 1;
@@ -332,6 +366,7 @@
   .home .text {
     position: sticky;
     top: 0;
+    z-index: 1;
     font-size: 30px;
     font-weight: 500;
     color: var(--text-color);

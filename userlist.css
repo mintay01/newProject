@@ -1,49 +1,6 @@
 
   
-  .side-body-logout-section span:last-child {
-    border-top: 2px solid gray;
-  }
-  .side-body-logout-section span:hover {
-    box-shadow: 0 4px 20px 0 rgb(0 0 0 / 14%), 0 7px 10px -5px rgb(0 0 0 / 58%);
-    background-color: #ccfff3;
-    cursor: pointer;
-  }
-  .side-body-logout-section button {
-    border: none;
-    background: none;
-    width: 100%;
-    text-align: left;
-    cursor: pointer;
-  }
-  .side-body-logout-section span button i {
-    font-size: 20px;
-  }
-  .side-body-logout-section span i {
-    font-size: 20px;
-  }
-  .form-container {
-    width: 100%;
-    padding: 3px 0 5px;
-    background-color: #ddddddf2;
-    border-radius: 10px;
-  }
   
-  .side-body-logout-section {
-    margin: 5px;
-    color: #000;
-  }
-  .side-body-logout-section span {
-    display: flex;
-    align-items: center;
-    padding: 5px;
-  }
-  
-  .side-body-logout-section span {
-    padding: 8px;
-    font-size: 12px;
-    /* margin-bottom: 15px; */
-    /* height: 30px; */
-  }
   .user-list span {
     font-size: 25px;
     font-weight: 700;
@@ -160,3 +117,8 @@
         position: relative;
         top: 1px;
       }
+
+      td a{
+        text-decoration: none;
+      }
+      

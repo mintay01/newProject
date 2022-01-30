@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./fontawesome-free-5.15.4-web/css/all.min.css">
+<link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./layout.css">
+    <link rel="stylesheet" href="./familyadd.css">
+    <link rel="stylesheet" href="AdminAddFamily.css">
+</head>
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="menu-bar menu image-text nav-link">
+                <div class="text logo-text">
+                    <span class="image">
+                        <img src="./image/FB_IMG_1641464909959.jpg" alt="">
+                    </span>
+
+                </div>
+            </div>
+
+            <i class="fas fa-align-justify toggle"></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+                <!-- <li class="search-box">
+                    <i class='bx bx-search icon'></i>
+                    <input type="text" placeholder="Search...">
+                </li> -->
+
+                <ul class="menu-links">
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class="fas fa-home icon"></i>
+                            <span class="text nav-text">Home</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class="far fa-user-circle  icon"></i>
+                            <span class="text nav-text">User List</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class="far fa-user-circle  icon"></i>
+                            <span class="text nav-text">Family List</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class="far fa-user-circle  icon"></i>
+                            <span class="text nav-text">Family Tree</span>
+                        </a>
+                    </li>
+
+                    <!-- <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-heart icon' ></i>
+                            <span class="text nav-text">Likes</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-wallet icon' ></i>
+                            <span class="text nav-text">Wallets</span>
+                        </a>
+                    </li> -->
+
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                <li class="">
+                    <a href="#">
+                        <i class="fas fa-power-off icon"></i>
+                        <span class="text nav-text">Logout</span>
+                    </a>
+                </li>
+
+                <!-- <li class="mode">
+                    <div class="sun-moon">
+                        <i class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i>
+                    </div>
+                    <span class="mode-text text">Dark mode</span>
+
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li> -->
+
+            </div>
+        </div>
+
+    </nav>
+
+    <section class="home">
+        <div class="text">
+            <span>
+                Acharaya
+            </span>
+            <div class="logo-container" >
+                <img class="img" onclick="openForm()" src="./image/pexels-rizky-sabriansyah-10661212.jpg" alt="">
+            </div>
+        </div>
+        <div class="form-popup" id="myForm">
+            <form class="form-container">
+                <div style="display: flex; justify-content: flex-end; padding: 2px;">
+                    <button type="button" class="btn cancel" onclick="closeForm()"><i
+                            class="far fa-times-circle"></i></button>
+
+
+                </div>
+
+                <div class="side-body-logout-section">
+
+                    <span>
+                        <i class="fas fa-user-circle"></i>
+                        <h1>Minal Pandit</h1>
+                    </span>
+                    <span>
+                        <i class="fas fa-envelope"></i>
+                        <p>meenalme1@gmail.com</p>
+                    </span>
+                    <span>
+
+                        <button> <i class="fas fa-pen"></i>Change Password</button>
+                    </span>
+                    <span>
+
+                        <button> <i class="fas fa-power-off"></i>Log out</button>
+                    </span>
+
+
+
+                </div>
+            </form>
+        </div>
+
+        <div class="text-addFamily">
+            <form action="">
+                <fieldset>
+                    <legend>Add Family</legend>
+                    <div class="add-user-section">
+                        <div class="section">
+                            <div class="user-image-icon">
+                                <img class="user-image" src="./image/110-1102775_download-empty-profile-hd-png-download.png" alt="">
+                                <i class="far fa-edit"></i>
+                            </div>
+
+                          
+                        </div>
+                        <div style="display: flex;">
+                            <div class="section">
+                                <div>
+                                    <label for="fname">Full Name:</label>
+                                </div>
+                                <div>
+                                    <input type="text" id="fname" class="" name="fname">
+                                </div>
+
+                            </div>
+                            <div class="section">
+                                <div>
+                                    <label for="pnumber">Phone No:</label>
+                                </div>
+                                <div>
+                                    <input type="tel" id="pnumber" name="pnumber">
+                                </div>
+
+                            </div>
+                        </div>
+                        <div style="display: flex;">
+                            <div class="section">
+                                <div>
+                                    <label for="mnumber">Mobile No:</label>
+                                </div>
+                                <div>
+                                    <input type="tel" id="mnumber" name="mnumber">
+                                </div>
+
+                            </div>
+                            <div class="section">
+                                <div>
+                                    <label for="email">Email:</label>
+                                </div>
+                                <div>
+                                    <input type="email" id="email" name="email">
+                                </div>
+
+                            </div>
+                        </div>
+                        <div style="display: flex;">
+
+                            <div class="section">
+                                <div>
+                                    <label for="birthday">Birthday:</label>
+                                </div>
+                                <div>
+                                    <input type="date" id="birthday" name="birthday">
+                                </div>
+
+                            </div>
+                            <div class="section">
+                                <div>
+                                    <label for="gender">Gender:</label>
+                                </div>
+
+                                <select name="gender" id="gender">
+                                    <option value="">Select</option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="section">
+                                <div>
+                                    <label for="marriedstatus">Marital status:</label>
+                                </div>
+
+                                <select name="marriedstatus" id="marriedstatus">
+                                    <option value="">Select</option>
+                                    <option value="single">Single</option>
+                                    <option value="married">Married</option>
+                                    <option value="widow">Widowed</option>
+                                    <option value="divorce">Divorced</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="section address">
+                            <div>
+                                <label for="address">Address:</label>
+                            </div>
+
+                            <select name="state" id="state">
+                                <option value="">State</option>
+                                <option value="single">Single</option>
+                                <option value="married">Married</option>
+                                <option value="widow">Widowed</option>
+                                <option value="divorce">Divorced</option>
+                            </select>
+                            <select name="district" id="district">
+                                <option value="">District</option>
+                                <option value="single">Single</option>
+                                <option value="married">Married</option>
+                                <option value="widow">Widowed</option>
+                                <option value="divorce">Divorced</option>
+                            </select>
+                            <select name="muni" id="muni">
+                                <option value="">Municipality</option>
+                                <option value="single">Single</option>
+                                <option value="married">Married</option>
+                                <option value="widow">Widowed</option>
+                                <option value="divorce">Divorced</option>
+                            </select>
+                            <label for="woda">Woda:</label>
+                            <input type="number" name="woda" id="woda">
+                            <label for="tole">Tole:</label>
+                            <input type="number" name="tole" id="tole">
+                        </div>
+                        <div class="section">
+                            <span>Teen Pustay Bibaran:</span>
+                        </div>
+                        <div style="display: flex;">
+                            <div class="section">
+                                <div>
+                                    <label for="fname">Grand Father Name:</label>
+                                </div>
+                                <div>
+                                    <input type="text" id="gfname" name="gfname">
+
+                                </div>
+                            </div>
+                            <div class="section">
+                                <div>
+                                    <label for="fname">Grand Mother Name:</label>
+                                </div>
+                                <div>
+                                    <input type="text" id="gmname" name="gmname">
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div style="display: flex;">
+                            <div class="section">
+                                <div>
+                                    <label for="fname">Father Name:</label>
+                                </div>
+                                <div>
+                                    <input type="text" id="faname" name="fname">
+                                </div>
+
+                            </div>
+                            <div class="section">
+                                <div>
+                                    <label for="fname">Mother Name:</label>
+                                </div>
+                                <div>
+                                    <input type="text" id="mname" name="mname">
+                                </div>
+
+                            </div>
+                        </div>
+                        <div style="display: flex;">
+                            <div class="section">
+                                <div>
+                                    <label for="fname">Wife/Husband Name:</label>
+                                </div>
+                                <div>
+                                    <input type="text" id="whmname" name="whmname">
+                                </div>
+
+                            </div>
+                            <div></div>
+                        </div>
+                       <div class="section">
+                           <div class="checkbox-toggle">
+                            <p>
+                                Big kjgvlhfuyvfuyfuyfuiyvuhvkjhbklb;ohiugbljbkjbjhvjn kjguhbjkb 
+                             </p>
+                                <label class="toggleSwitch large" onclick="">
+                                      <input type="checkbox" checked />
+                                      <span>
+                                          <span>No</span>
+                                          <span>Yes</span>
+                                         
+                                      </span>
+                                      <a></a>
+                                  </label>
+                             </div> 
+                           </div>
+                           <div class="section">
+                            <div>
+                                <label for="marriedstatus">Marital status:</label>
+                            </div>
+
+                            <select name="marriedstatus" id="marriedstatus">
+                                <option value="">Select</option>
+                                <option value="single">Single</option>
+                                <option value="married">Married</option>
+                                <option value="widow">Widowed</option>
+                                <option value="divorce">Divorced</option>
+                            </select>
+                        </div>
+                        <div class="section">
+                            <div>
+                               <p>For Conformation</p>
+                            </div>
+                            <div class="confirm-display-flex">
+                                <div>
+                                    <label for="confirm">Name:</label>
+                                    <input type="text" id="" class="" name="confirm">
+                                </div>
+                                <div>
+                                    <label for="confirm">Phone:</label>
+                                    <input type="text" id="" class="" name="confirm">
+                                </div>
+                            </div>
+                           
+
+                        </div>
+                        <div class="section">
+                            <table>
+                                <tr>
+                                    <th>S.no</th>
+                                    <th>Name</th>
+                                    <th>Relation</th>
+                                    <th></th>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Minal Acharya</td>
+                                    <td>Son</td>
+                                    <th><i class="fas fa-plus-circle"></i></th>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="btn-content">
+                        <input class="submit-btn" type="submit" value="Submit">
+                    </div>
+
+
+
+                </fieldset>
+            </form>
+
+        </div>
+        <footer>
+            <div class="footer-company-profile">
+                <span class="company-name">Silicon Soft and IT Consulant Pvt.Ltd</span>
+                <div class="company-profile">
+                    <div>
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div>
+                        <span>
+                            Prayag Marge, Santinagar, Kathmandu, Nepal
+                        </span>
+                    </div>
+                </div>
+                <div class="company-profile">
+                    <div>
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div>
+                        <span>
+                            siliconsoftnepal@gmail.com / info@siliconsoftnepal.org.np
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="footer-company-logo">
+                <div class="footer-img">
+                    <img src="./image/flogo.png" alt="" width="50px">
+                </div>
+                <div>
+                    <span>
+                        Copyright ©2022 Silicon Soft and I.T. Consultant Pvt. Ltd.
+                    </span>
+                </div>
+            </div>
+            <div class="footer-company-person">
+                <span class="company-name">For More Details:</span>
+                <div class="company-profile">
+                    <span>
+                        <i class="fas fa-user"></i>
+                    </span>
+                    <span>Manjil Acharaya</span>
+                </div>
+                <div class="company-profile">
+                    <span>
+                        <i class="fas fa-id-card"></i>
+                    </span>
+                    <span>9843415029/9802760599</span>
+                </div>
+
+            </div>
+        </footer>
+
+    </section>
+
+
+
+
+    <script src="./index.js">
+
+
+
+    </script>
+</body>
+</html>
