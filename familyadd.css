@@ -23,20 +23,24 @@ label {
   font-size: 18px;
   text-decoration: underline;
 }
+section div{
+  margin-bottom: 5px;
+}
 #district {
-  width: 100px;
+  width: 160px;
 }
 #woda {
-  width: 36px !important;
+  width: 60px;
 }
 #tole {
-  width: 111px;
+  width: 180px;
 }
 #state {
-  width: 80px;
+  width: 130px;
+  
 }
 #muni {
-  width: 150px;
+  width: 200px;
 }
 #state,
 #district,
@@ -152,5 +156,47 @@ tr:nth-child(even) {
   left: 74%;
   transform: translateY(-50%);
 }
+.form-display {
+  display: flex;
+  flex-direction: row;
+}
 
-  
+.form-display div select {
+  max-width: 100%;
+}
+.addFamily-content{
+  background-color: rgb(200 227 148);
+  height: 50px;
+  max-width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 -2px 9px 0 rgb(0 0 0 / 24%), 0 3px 16px 0 rgb(0 0 0 / 48%);
+}
+
+.addFamily-content span{
+  font-size: 25px;
+}
+@media only screen and (max-width: 767px) {
+  .text-addFamily {
+    padding: unset;
+  }
+  .form-display {
+    flex-direction: column;
+  }
+  fieldset {
+    padding: unset;
+  }
+  .section {
+    max-width: 100%;
+    width: unset;
+  }
+  #state,
+  #district,
+  #muni,
+  #woda,
+  #tole {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+}
